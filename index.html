@@ -39,13 +39,13 @@
     <section class="button-section mt-10">
       <div class="customized-container">
         <div class="flex justify-center gap-5">
-          <button class="btn bg-[#b4f461]">Donation</button>
-        <button class="btn bg-white border-2 border-[#1111114D]">History</button>
+          <button class="btn bg-white" id="donationTab">Donation</button>
+        <button class="btn bg-white border-2 border-[#1111114D]" id="historyTab">History</button>
         </div>
       </div>
     </section>
 
-    <section class="donate-section mt-5">
+    <section class="donate-section mt-5 hidden" id="donate-section">
       <div class="customized-container">
          <div class="card-controller">
           <div class="single-card border-2 border-[#1111114D] p-5 rounded-md">
@@ -77,7 +77,7 @@
                 <div class="">
                   <button class="flex items-center gap-1 bg-[#1111110D] p-3 rounded-md"><img src="assets/coin.png" alt=""><span>0</span> BDT</button>
                 </div>
-                <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 <div class="card-actions justify-end">
                   <button class="btn bg-[#b4f461] w-full">Donate Now</button>
@@ -96,7 +96,7 @@
                 <div class="">
                   <button class="flex items-center gap-1 bg-[#1111110D] p-3 rounded-md"><img src="assets/coin.png" alt=""><span>0</span> BDT</button>
                 </div>
-                <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 <div class="card-actions justify-end">
                   <button class="btn bg-[#b4f461] w-full">Donate Now</button>
@@ -107,6 +107,10 @@
 
          </div>
       </div>
+    </section>
+
+    <section class="history-section hidden" id="history-section">
+      
     </section>
 
     <section class="footer-section bg-[#F9F7F3] mt-10 h-16">
