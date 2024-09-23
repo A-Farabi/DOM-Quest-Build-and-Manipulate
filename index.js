@@ -13,6 +13,7 @@ donationTab.addEventListener("click", function(){
     donationTab.classList.add('bg-[#b4f461]')
     donationTab.classList.remove('bg-white')
     donateSection.classList.remove('hidden')
+    historySection.classList.add('hidden')
 })
 
 historyTab.addEventListener("click", function(){
@@ -50,7 +51,7 @@ donateBtn1.addEventListener("click", function(){
     const div = document.createElement("div")
     div.innerHTML = `
     <div class="p-5">
-        <h3>${btn1Input} Taka is Donated for Flood-2024 at Noakhali, Bangladesh</h3>
+        <h3 class="text-lg font-semibold">${btn1Input} Taka is Donated for Flood-2024 at Noakhali, Bangladesh</h3>
         <p>Date: ${new Date().toString()}</p>
     </div>
     `
@@ -82,7 +83,7 @@ donateBtn2.addEventListener("click", function(){
     const div = document.createElement("div")
     div.innerHTML = `
     <div class="p-5">
-        <h3>${btn2Input} Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
+        <h3 class="text-lg font-semibold">${btn2Input} Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
         <p>Date: ${new Date().toString()}</p>
     </div>
     `
