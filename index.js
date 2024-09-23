@@ -1,6 +1,10 @@
 const donationTab = document.getElementById("donationTab")
 const historyTab = document.getElementById("historyTab")
 const donateSection = document.getElementById("donateSection")
+const historySection = document.getElementById("historySection")
+const historyCardContent = document.getElementById("historyCardContent")
+const btn1Input = document.getElementById("btn1Input");
+// console.log(btn1Input);
 
 donationTab.addEventListener("click", function(){
     // donationTab.classList.remove('hidden')
@@ -16,4 +20,105 @@ historyTab.addEventListener("click", function(){
     historyTab.classList.remove('bg-white')
     historyTab.classList.add('bg-[#b4f461]')
     donateSection.classList.add('hidden')
+    historySection.classList.remove('hidden')
+})
+
+function getValueFromId(params) {
+    const value = document.getElementById(params).value;
+    return value
+}
+
+const donateBtn1 = document.getElementById("donateBtn1")
+
+donateBtn1.addEventListener("click", function(){
+
+    const btn1Input = Number(getValueFromId("btn1Input"))
+    console.log(btn1Input);
+
+    const balance = Number(document.getElementById("balance").innerText)
+    console.log(balance);
+
+    const btnOutput1 = Number(document.getElementById("btnOutput1").innerText)
+    console.log(btnOutput1);
+
+    const balanceDeduct1 = balance - btn1Input
+    document.getElementById("balance").innerText = balanceDeduct1;
+
+    const btnOutputAddition = btnOutput1 + btn1Input
+    document.getElementById("btnOutput1").innerText = btnOutputAddition
+
+    const div = document.createElement("div")
+    div.innerHTML = `
+    <div class="p-5">
+        <h3>${btn1Input} Taka is Donated for Flood-2024 at Noakhali, Bangladesh</h3>
+        <p>Date: ${new Date().toString()}</p>
+    </div>
+    `
+
+    const historyCardContainer = document.getElementById("historyCardContainer")
+    historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
+})
+
+
+const donateBtn2 = document.getElementById("donateBtn2")
+
+donateBtn2.addEventListener("click", function(){
+
+    const btn2Input = Number(getValueFromId("btn2Input"))
+    console.log(btn2Input);
+
+    const balance = Number(document.getElementById("balance").innerText)
+    console.log(balance);
+
+    const btnOutput2 = Number(document.getElementById("btnOutput2").innerText)
+    console.log(btnOutput2);
+
+    const balanceDeduct2 = balance - btn2Input
+    document.getElementById("balance").innerText = balanceDeduct2;
+
+    const btnOutputAddition = btnOutput2 + btn2Input
+    document.getElementById("btnOutput2").innerText = btnOutputAddition
+
+    const div = document.createElement("div")
+    div.innerHTML = `
+    <div class="p-5">
+        <h3>${btn2Input} Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
+        <p>Date: ${new Date().toString()}</p>
+    </div>
+    `
+
+    const historyCardContainer = document.getElementById("historyCardContainer")
+    historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
+})
+
+
+const donateBtn3 = document.getElementById("donateBtn3")
+
+donateBtn3.addEventListener("click", function(){
+
+    const btn3Input = Number(getValueFromId("btn3Input"))
+    console.log(btn3Input);
+
+    const balance = Number(document.getElementById("balance").innerText)
+    console.log(balance);
+
+    const btnOutput3 = Number(document.getElementById("btnOutput3").innerText)
+    console.log(btnOutput3);
+
+    const balanceDeduct3 = balance - btn3Input
+    document.getElementById("balance").innerText = balanceDeduct3;
+
+    const btnOutputAddition = btnOutput3 + btn3Input
+    document.getElementById("btnOutput3").innerText = btnOutputAddition
+
+    const div = document.createElement("div")
+    div.innerHTML = `
+    <div class="p-5">
+            <h3 class="text-lg font-semibold">${btn3Input} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
+         <p>Date: ${new Date().toString()}</p>
+    </div>
+    `
+
+    const historyCardContainer = document.getElementById("historyCardContainer")
+    historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
 })
