@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6aa1caad20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar starts here -->
+    <header>
+        <section class="header-section bg-[#F9F7F3] fixed top-0 z-10 w-full backdrop-blur-xl bg-white/30">
+          <div class="customized-container">
+            <div class="text-center lg:hidden flex justify-center">
+              <h1 class="text-xl font-bold mt-5 w-[50%]">Mazid-Mini Charity Foundation</h1>
+            <img src="assets/logo.png" alt="">
+            </div>
+            <div class="navbar mt-8 lg:mt-0 pb-10">
+              <div class="navbar-start ">
+                <a class="btn bg-[#B4F461] text-xl">Blog</a>
+              </div>
+              <div class="navbar-center hidden lg:flex items-center gap-3 ">
+                
+                  <img src="assets/logo.png" alt="">
+                  <h1 class="text-3xl font-bold">Mazid-Mini Charity Foundation</h1>
+                
+              </div>
+              <div class="navbar-end gap-2 ">
+                <img src="assets/coin.png" alt="">
+                <h3 class="lg:text-xl font-bold"><span id="balance">5500</span> BDT</h3>
+              </div>
+            </div>
+          </div>
+        
+
+    <section class="button-section mt-3 pb-3">
+      <div class="customized-container">
+        <div class="flex justify-center gap-5">
+          <button class="btn bg-white" id="donationTab">Donation</button>
+        <button class="btn bg-white border-2 border-[#1111114D]" id="historyTab">History</button>
+        </div>
+      </div>
+    </section>
+
+  </section>
+</header>
+
+
+    <div class="customized-container lg:mt-60 mt-[90%] md:mt-[30%]">
+        <h1 class="text-3xl font-bold text-center pb-8">Important FAQ <span><i class="fa-solid fa-clipboard-question"></i></span></h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node is an element, attribute, text, etc. The DOM allows programming languages (like JavaScript) to interact with and manipulate the content, structure, and style of a web page dynamically.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, I can use several methods provided by the document object.
+
+                First, I can use getElementById() to select an element by its unique id. This is useful when I know the specific identifier for the element I want to manipulate. <br><br>
+                
+                Alternatively, I can use getElementsByClassName() to select all elements that share a specific class name. This method returns a collection of elements, which is helpful when I want to target multiple elements with the same styling. <br><br>
+                
+                Another option is getElementsByTagName(), which allows me to select all elements of a certain type, like all <div> or <p> tags. <br><br>
+                
+                For more flexibility, I can use querySelector(), which lets me select the first element that matches a CSS selector. This is particularly useful for selecting elements based on complex criteria. <br><br>
+                
+                Lastly, querySelectorAll() can be used to select all elements that match a given CSS selector, returning a static list that I can iterate over.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an element's attributes and styles using the DOM, I can use several methods and properties. <br><br>
+
+                For attributes, I can use the `setAttribute()` method to change an existing attribute or add a new one. For example, if I want to change the `src` of an image, I would do something like this. I can also use the `getAttribute()` method to retrieve the value of an attribute, and `removeAttribute()` to remove an attribute from an element. <br><br>
+                
+                When it comes to styles, I can directly modify an element's `style` property. This allows me to change CSS properties inline. For instance, I can set the `backgroundColor`, `fontSize`, or any other CSS property directly by accessing it through the `style` object. I can also use the `classList` property to add, remove, or toggle CSS classes, which is useful for applying predefined styles. <br><br>
+                
+                By using these methods and properties, I can effectively change both the attributes and styles of elements on a web page.</p>
+            </div>
+          </div>
+
+<div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique where I attach a single event listener to a parent element instead of adding listeners to each child element. This way, when an event occurs on a child, it bubbles up to the parent, allowing me to handle events more efficiently. <br><br> It’s useful because it reduces the number of listeners, works with dynamically added elements, and simplifies my code.</p>
+            </div>
+          </div>
+
+    </div>
+</body>
+</html>

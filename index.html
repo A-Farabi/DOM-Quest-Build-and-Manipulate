@@ -11,13 +11,13 @@
 <body>
     <!-- navbar starts here -->
     <header>
-        <section class="header-section bg-[#F9F7F3] ">
+        <section class="header-section bg-[#F9F7F3] fixed top-0 z-10 w-full backdrop-blur-xl bg-white/30">
           <div class="customized-container">
             <div class="text-center lg:hidden flex justify-center">
               <h1 class="text-xl font-bold mt-5 w-[50%]">Mazid-Mini Charity Foundation</h1>
             <img src="assets/logo.png" alt="">
             </div>
-            <div class="navbar mt-8 lg:mt-0 pb-14">
+            <div class="navbar mt-8 lg:mt-0 pb-10">
               <div class="navbar-start ">
                 <a class="btn bg-[#B4F461] text-xl">Blog</a>
               </div>
@@ -29,14 +29,13 @@
               </div>
               <div class="navbar-end gap-2 ">
                 <img src="assets/coin.png" alt="">
-                <h3><span id="balance">5500</span> BDT</h3>
+                <h3 class="lg:text-xl font-bold"><span id="balance">5500</span> BDT</h3>
               </div>
             </div>
           </div>
-        </section>
-    </header>
+        
 
-    <section class="button-section mt-10">
+    <section class="button-section mt-3 pb-3">
       <div class="customized-container">
         <div class="flex justify-center gap-5">
           <button class="btn bg-white" id="donationTab">Donation</button>
@@ -45,7 +44,10 @@
       </div>
     </section>
 
-    <section class="donate-section mt-5" id="donateSection">
+  </section>
+</header>
+
+    <section class="donate-section mt-[90%] lg:mt-60 md:mt-[30%]" id="donateSection">
       <div class="customized-container">
          <div class="card-controller">
           <div class="single-card border-2 border-[#1111114D] p-5 rounded-md">
