@@ -42,6 +42,8 @@ donateBtn1.addEventListener("click", function(){
     const btnOutput1 = Number(document.getElementById("btnOutput1").innerText)
     console.log(btnOutput1);
 
+    // Validation checking
+
     if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
         return alert("Invalid Input")
     }
@@ -78,6 +80,12 @@ donateBtn2.addEventListener("click", function(){
     const btnOutput2 = Number(document.getElementById("btnOutput2").innerText)
     console.log(btnOutput2);
 
+    // validation cheking
+
+    if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
+        return alert("Invalid Input")
+    }
+
     const balanceDeduct2 = balance - btn2Input
     document.getElementById("balance").innerText = balanceDeduct2;
 
@@ -109,6 +117,12 @@ donateBtn3.addEventListener("click", function(){
 
     const btnOutput3 = Number(document.getElementById("btnOutput3").innerText)
     console.log(btnOutput3);
+
+    // validation checking
+
+    if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
+        return alert("Invalid Input")
+    }
 
     const balanceDeduct3 = balance - btn3Input
     document.getElementById("balance").innerText = balanceDeduct3;
