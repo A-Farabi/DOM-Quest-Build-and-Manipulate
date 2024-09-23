@@ -42,6 +42,10 @@ donateBtn1.addEventListener("click", function(){
     const btnOutput1 = Number(document.getElementById("btnOutput1").innerText)
     console.log(btnOutput1);
 
+    if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
+        return alert("Invalid Input")
+    }
+
     const balanceDeduct1 = balance - btn1Input
     document.getElementById("balance").innerText = balanceDeduct1;
 
