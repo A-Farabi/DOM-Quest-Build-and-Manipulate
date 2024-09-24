@@ -29,6 +29,8 @@ function getValueFromId(params) {
     return value
 }
 
+// button 1
+
 const donateBtn1 = document.getElementById("donateBtn1")
 
 donateBtn1.addEventListener("click", function(){
@@ -45,6 +47,7 @@ donateBtn1.addEventListener("click", function(){
     // Validation checking
 
     if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
+
         return alert("Invalid Input")
     }
 
@@ -64,8 +67,13 @@ donateBtn1.addEventListener("click", function(){
 
     const historyCardContainer = document.getElementById("historyCardContainer")
     historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
+
+    // Show the modal after successful donation
+    const modal = document.getElementById("my_modal_5");
+    modal.showModal();
 })
 
+// button 2
 
 const donateBtn2 = document.getElementById("donateBtn2")
 
@@ -82,7 +90,7 @@ donateBtn2.addEventListener("click", function(){
 
     // validation cheking
 
-    if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
+    if (balance < btn2Input || isNaN(Number(btn2Input)) || btn2Input <= 0 || btn2Input === "") {
         return alert("Invalid Input")
     }
 
@@ -102,7 +110,15 @@ donateBtn2.addEventListener("click", function(){
 
     const historyCardContainer = document.getElementById("historyCardContainer")
     historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
+
+    // Show the modal after successful donation
+    const modal = document.getElementById("my_modal_5");
+    modal.showModal();
+
 })
+
+
+// button 3
 
 
 const donateBtn3 = document.getElementById("donateBtn3")
@@ -120,7 +136,7 @@ donateBtn3.addEventListener("click", function(){
 
     // validation checking
 
-    if (balance < btn1Input || isNaN(Number(btn1Input)) || btn1Input <= 0 || btn1Input === "") {
+    if (balance < btn3Input || isNaN(Number(btn3Input)) || btn3Input <= 0 || btn3Input === "") {
         return alert("Invalid Input")
     }
 
@@ -141,5 +157,8 @@ donateBtn3.addEventListener("click", function(){
     const historyCardContainer = document.getElementById("historyCardContainer")
     historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
 
+    // Show the modal after successful donation
+    const modal = document.getElementById("my_modal_5");
+    modal.showModal();
     
 })
