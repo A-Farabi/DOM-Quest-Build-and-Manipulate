@@ -140,4 +140,6 @@ donateBtn3.addEventListener("click", function(){
 
     const historyCardContainer = document.getElementById("historyCardContainer")
     historyCardContainer.insertBefore(div, historyCardContainer.firstChild)
+
+    
 })
