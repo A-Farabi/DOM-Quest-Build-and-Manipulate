@@ -24,10 +24,14 @@ historyTab.addEventListener("click", function(){
     historySection.classList.remove('hidden')
 })
 
+// reusable function here
+
 function getValueFromId(params) {
     const value = document.getElementById(params).value;
     return value
 }
+
+
 
 // button 1
 
